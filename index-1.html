@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora Valeria Marroquín</title>
+    <link rel="icon" type="image/png" href="Recursos/Img/LogCapSec.png">
+
+    <Style>
+        /*CSS-Diseño, configurar en cascada(esto si es un lenguaje de progra)*/
+        html, body{
+            height: 100%;
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            color: rgb(49, 32, 1);
+        }
+        header{
+            padding: 20px;
+            background-color: rgb(70, 100, 69);
+            h1 {
+    text-shadow: 0 0 5px #bb00ff, 0 0 20px #ff00fb;
+}
+        }
+        main{
+            flex: 1;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        } 
+        Footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            border-top: 1px solid rgb(84, 130, 82);
+            background-color: rgb(196, 255, 220);
+        }
+        /* Esto le dice a la imagen que sea "elástica" */
+footer img {
+    transition: 0.3s;
+}
+
+/* Esto le dice que se estire cuando el mouse la toque */
+footer img:hover {
+    transform: scale(1.1);
+}
+.semana {
+    background-color: white;
+    border-radius: 10px;
+    margin: 30px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-left: 8px solid #6a1b9a; /* El borde morado oscuro de la foto */
+    width: 95%;
+    display: flex; /* Esto pone el texto y el PDF a la par */
+    align-items: stretch; 
+    min-height: 400px;
+}
+
+/* La parte del texto (Izquierda) */
+.info-semana {
+    width: 30%; /* Le damos un espacio definido al texto */
+    padding: 40px;
+    border-right: 1px solid #eee; /* Una línea sutil de división */
+}
+
+/* La parte del PDF (Derecha) */
+.visor-pdf {
+    width: 70%; /* El PDF se lleva la mayor parte del ancho */
+}
+
+.visor-pdf iframe {
+    width: 100%;
+    height: 100%; /* Que ocupe todo el alto de la tarjeta */
+    border: none;
+}
+    </Style>
+</head>
+<body>
+    <header>
+        <h1>Bitacora Segunda y tercera</h1>
+    </header>
+    <MAIN>
+        <h4>Contenido de la pagina web</h4>
+        <MAIN>
+    <div class="semana">
+    <!-- IZQUIERDA -->
+    <div class="info-semana">
+        <h2 style="color: #333; margin-bottom: 5px;">Introducción a Arduino</h2>
+        <p style="color: #666; font-size: 0.9em; line-height: 1.4;">
+            Visualización del documento técnico de Arduino:
+        </p>
+    </div>
+
+    <!-- DERECHA -->
+    <div class="visor-pdf">
+        <iframe src="Recursos/Introducción Arduino Valeria Marroquin (1).pdf"></iframe>
+    </div>
+</div>
+
+    <div class="semana">
+        <h3>Semana 2</h3>
+        <p>Aprendí a usar efectos neón y animaciones hover.</p>
+    </div>
+</MAIN>
+    </MAIN>
+    <footer>
+        <span>@valeriap_marroquín</span>
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" height="75"width="300">
+    </footer>
+</body>
+</html> 
