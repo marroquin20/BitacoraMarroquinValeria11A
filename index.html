@@ -108,7 +108,7 @@
             box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.08);
         }
 
-        /* Accent bar a la izquierda según categoría */
+        /* Borde púrpura a la izquierda */
         .content-section::before {
             content: '';
             position: absolute;
@@ -117,27 +117,6 @@
             bottom: 0;
             width: 6px;
             background-color: var(--primary-color);
-        }
-
-        /* Header de tarjeta / Categorías */
-        .section-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 0.75rem;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-
-        .category-badge {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            font-weight: 700;
-            letter-spacing: 0.05em;
-            padding: 4px 10px;
-            border-radius: 20px;
-            background-color: rgba(106, 27, 154, 0.1);
-            color: var(--primary-color);
         }
 
         .section-title {
@@ -258,10 +237,7 @@
     <main>
 
         <!-- SEMANA 1 -->
-        <section id="semana1" class="content-section reveal-on-scroll" data-category="teoria">
-            <div class="section-header">
-                <span class="category-badge">Documentación</span>
-            </div>
+        <section id="semana1" class="content-section reveal-on-scroll">
             <h2 class="section-title">Semana 1: Introducción a Arduino</h2>
             <p class="placeholder-text">Visualización del documento técnico explicativo sobre los conceptos fundamentales de Arduino, sus componentes principales y el entorno de desarrollo.</p>
             
@@ -274,10 +250,7 @@
         </section>
 
         <!-- SEMANA 2 -->
-        <section id="semana2" class="content-section reveal-on-scroll" data-category="simulacion">
-            <div class="section-header">
-                <span class="category-badge">Simulación</span>
-            </div>
+        <section id="semana2" class="content-section reveal-on-scroll">
             <h2 class="section-title">Semana 2: Simulación en Tinkercad</h2>
             <p class="placeholder-text">Video explicativo de la práctica interactiva de circuitos virtuales con Arduino: diseño, configuración de pines digitales y encendido programado de LEDs.</p>
             
@@ -293,10 +266,7 @@
         </section>
 
         <!-- SEMANA 3 -->
-        <section id="semana3" class="content-section reveal-on-scroll" data-category="fisico">
-            <div class="section-header">
-                <span class="category-badge">Físico</span>
-            </div>
+        <section id="semana3" class="content-section reveal-on-scroll">
             <h2 class="section-title">Semana 3: Circuito en vida real</h2>
             <p class="placeholder-text">Ensamblaje del circuito en protoboard utilizando componentes reales. Carga del código en la placa Arduino UNO y verificación de encendido de LEDs de colores.</p>
             
@@ -312,10 +282,7 @@
         </section>
 
         <!-- SEMANA 4 -->
-        <section id="semana4" class="content-section reveal-on-scroll" data-category="fisico">
-            <div class="section-header">
-                <span class="category-badge">Físico</span>
-            </div>
+        <section id="semana4" class="content-section reveal-on-scroll">
             <h2 class="section-title">Semana 4: Primer circuito y programación en físico</h2>
             <p class="placeholder-text">En esta clase exploramos cómo dar vida a nuestro primer circuito utilizando un LED RGB y LEDs estándar con Arduino UNO en físico.</p>
             
@@ -331,10 +298,7 @@
         </section>
 
         <!-- SEMANA 5 -->
-        <section id="semana5" class="content-section reveal-on-scroll" data-category="proyecto">
-            <div class="section-header">
-                <span class="category-badge">Proyecto</span>
-            </div>
+        <section id="semana5" class="content-section reveal-on-scroll">
             <h2 class="section-title">Semana 5: Implementación de Sensores</h2>
             <p class="placeholder-text">Integración de entradas analógicas al sistema mediante potenciómetros y sensores para controlar las salidas del circuito.</p>
             
@@ -350,10 +314,7 @@
         </section>
 
         <!-- SEMANA 6 -->
-        <section id="semana6" class="content-section reveal-on-scroll" data-category="proyecto">
-            <div class="section-header">
-                <span class="category-badge">Proyecto</span>
-            </div>
+        <section id="semana6" class="content-section reveal-on-scroll">
             <h2 class="section-title">Semana 6: Control de Motores y Actuadores</h2>
             <p class="placeholder-text">Manejo de servomotores y componentes mecánicos programando ángulos exactos a través de señales PWM.</p>
             
@@ -369,10 +330,7 @@
         </section>
 
         <!-- SEMANA 7 -->
-        <section id="semana7" class="content-section reveal-on-scroll" data-category="final">
-            <div class="section-header">
-                <span class="category-badge">Proyecto Final</span>
-            </div>
+        <section id="semana7" class="content-section reveal-on-scroll">
             <h2 class="section-title">Semana 7: Proyecto Integrador</h2>
             <p class="placeholder-text">Consolidación de las técnicas aprendidas durante el periodo en una sola aplicación funcional completa.</p>
             
@@ -407,7 +365,7 @@
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add("visible");
-                        observer.unobserve(entry.target); // Animación solo 1 vez
+                        observer.unobserve(entry.target);
                     }
                 });
             }, observerOptions);
